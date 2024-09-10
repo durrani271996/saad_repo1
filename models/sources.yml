@@ -6,3 +6,21 @@ sources:
     schema: TPCH_SF10
     tables:
       - name: ORDERS
+      - name: CUSTOMER
+      - name: SUPPLIER
+
+  - name: snowflake_sample_data1
+    database: SNOWFLAKE_SAMPLE_DATA
+    schema: TPCH_SF100
+    tables:
+      - name: ORDERS
+      - name: CUSTOMER
+      - name: SUPPLIER
+    
+  - name: snowflake_sample_data2
+    database: SNOWFLAKE_SAMPLE_DATA
+    schema: TPCH_SF1000
+    tables:
+      - name: ORDERS
+      - name: CUSTOMER
+      - name: SUPPLIER

@@ -10,9 +10,9 @@ FROM
 
 )
 
-select orderdate,count(totalorders) as total_orders,sum(totalrevenue) as total_revenue
+select customerkey,orderdate,count(totalorders) as total_orders,sum(totalrevenue) as total_revenue
 from base_cte
 GROUP BY
-orderdate
+orderdate,customerkey
 order by 
-orderdate
+orderdate,customerkey
