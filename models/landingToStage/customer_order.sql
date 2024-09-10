@@ -1,7 +1,7 @@
 with customer_data as (
 
 select customerkey,customername,customeraddress,customerphone from
-{{ref("customers")}}
+{{ref("customer")}}
 
 ),
 
